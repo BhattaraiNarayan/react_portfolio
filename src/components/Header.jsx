@@ -4,17 +4,17 @@ const Header=()=>{
 return (
   <div className="flex justify-between bg-red-500 h-40">
     <li className="bg-white-500">
-      <Link to="/">Home</Link>
+      <Link to="/react_portfolio/">Home</Link>
     </li>
     <li>
-      <Link to="/about">About</Link>
+      <Link to="/react_portfolio/about">About</Link>
     </li>
     <li>
-      <Link to="/portfolio">Portfolio</Link>
+      <Link to="/react_portfolio/portfolio">Portfolio</Link>
     </li>
     <li>
-      <Link to="/contact">Contact</Link>
+      <Link to="/react_portfolio/contact">Contact</Link>
     </li>
   </div>
-)}
+);}
 export default Header;
