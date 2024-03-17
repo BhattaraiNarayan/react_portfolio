@@ -1,20 +1,15 @@
-import './App.css'
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./index.css";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-    <h1>Portfolio project</h1>
     <div>
-      <h2>Projects</h2>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-      </ul>
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
-    </>
-  )
-}
-
-export default App
+  );
+};
+export default App;
