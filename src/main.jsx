@@ -11,23 +11,23 @@ import Error from './components/Error';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/react_portfolio",
     element: <App />,
     children: [
       {
-        path: "/" || "/home",
+        path: "/react_portfolio" || "/react_portfolio/home",
         element: <Body />,
       },
       {
-        path: "/about",
+        path: "/react_portfolio/about",
         element: <About />,
       },
       {
-        path: "/portfolio",
+        path: "/react_portfolio/portfolio",
         element: <Portfolio />,
       },
       {
-        path: "/contact",
+        path: "/react_portfolio/contact",
         element: <Contact />,
       },
     ],
