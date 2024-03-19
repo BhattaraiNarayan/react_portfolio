@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/react_portfolio" || "/react_portfolio/home",
+        path: "/react_portfolio" || "/react_portfolio/body",
         element: <Body />,
       },
       {

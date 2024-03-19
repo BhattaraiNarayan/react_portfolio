@@ -5,7 +5,7 @@ import "./index.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="w-full h-screen top-0 left-0">
       <Header />
       <Outlet />
       <Footer />
