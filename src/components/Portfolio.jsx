@@ -11,12 +11,12 @@ const Portfolio=()=>{
           Here are some of the projects that I have worked on.{" "}
         </p>
         <div className="grid sm:grid-cols-3 gap-12">
-          <ProjectItem img={projectItem} title="EC サイト" />
-          <ProjectItem img={projectItem} title="project" />
-          <ProjectItem img={projectItem} title="project" />
-          <ProjectItem img={projectItem} title="project" />
-          <ProjectItem img={projectItem} title="project" />
-          <ProjectItem img={projectItem} title="project" />
+          <ProjectItem img={projectItem} title="Github link" />
+          <ProjectItem img={projectItem} title="Github link" />
+          <ProjectItem img={projectItem} title="Github link" />
+          <ProjectItem img={projectItem} title="Github link" />
+          <ProjectItem img={projectItem} title="Github link" />
+          <ProjectItem img={projectItem} title="Github link" />
         </div>
       </div>
     );

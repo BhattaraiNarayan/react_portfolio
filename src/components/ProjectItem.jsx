@@ -14,12 +14,9 @@ return (
           className="mt-4 p-2 border-2 rounded-2xl font-bold text-white bg-indigo-400
         "
         >
-        {title}
+          {title}
         </h3>
-        <a
-          href=" https://bhattarainarayan.github.io/Ecommerce_Website/"
-          target="_blank"
-        >
+        <a href="https://github.com/BhattaraiNarayan" target="_blank">
           <p className="bg-indigo-400 mt-4 p-2 cursor-pointer border-2 rounded-2xl shadow-5xl font-bold text-white">
             詳細を見る
           </p>

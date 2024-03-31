@@ -10,12 +10,12 @@ const Footer=()=>{
         </div>
         <div className=" flex items-center text-lg justify-end gap-1 md:gap-4 md:mr-4">
           <a
-            href="https://www.bhattarainarayan.com/"
+            href="https://bhattarainarayan.github.io/react_portfolio/"
             alt="Bhattarai Narayan's website link"
             target="_blank"
             className="hover:text-white"
-            >
-          <CgWebsite size={36} />
+          >
+            <CgWebsite size={36} />
           </a>
           <a
             href="https://www.instagram.com/narayan.bhattarai.50596/"
