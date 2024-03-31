@@ -3,24 +3,34 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Body from './components/Body.jsx'
-import About from './components/About';
+import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Home from './components/Home';
 import Error from './components/Error';
+import Index from './components/Index.jsx'
+import About from './components/About.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/react_portfolio",
+    path: "/react_portfolio/",
     element: <App />,
     children: [
       {
-        path: "/react_portfolio" || "/react_portfolio/body",
-        element: <Body />,
+        path: "/react_portfolio/",
+        element: <Index />,
+      },
+      {
+        path: "/react_portfolio/home",
+        element: <Home />,
       },
       {
         path: "/react_portfolio/about",
         element: <About />,
+      },
+      {
+        path: "/react_portfolio/skills",
+        element: <Skills />,
       },
       {
         path: "/react_portfolio/portfolio",

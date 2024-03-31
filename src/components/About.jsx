@@ -1,8 +1,86 @@
- 
- const About=()=>{
-return (
-  <div className="w-auto h-screen bg-white pl-2 md:h-screen bg-white mr-10 md:pl-24">
-    <h1>About me</h1>
-  </div>
-);}
+const About = () => {
+  const qns = [
+    {
+      id: 1,
+      title:
+        "拙サイトをご閲覧いただき、誠にありがとうございます。これから、自己紹介をさせていただきます。",
+      info: "こんにちは😊",
+    },
+    {
+      id: 2,
+      title: "お名前",
+      info: "私は ネパール 出身地のバッタライ ナラヤンと申します。呼ぶときは「ナラヤン」で 呼んで下さい。",
+    },
+    {
+      id: 3,
+      title: "学歴",
+      info: "Bachelor of Computer Application (BCA)を修了しました(2012-2016)。現在、日本経済大学三宮キャンパスの留学生です。",
+    },
+    {
+      id: 4,
+      title: "経歴",
+      info: "ネパールでの経歴は、2016年9から2017年9月IT関連の仕事をしておりました。主に、Wordpress CMS(ワードプレス)を使用して、Webアプリケーションの開発を行っておりました。日本に来てからは、プログラミングスキルの向上を目指しております。現在は、React と Tailwind CSSなどの技術も学んでおります。将来的には、フルスタックエンジニアを目指しております",
+    },
+    {
+      id: 5,
+      title: "日本語レベル",
+      info: "日本語能力試験N2合格しております。日本語でのコミュニケーションも問題ありません。",
+    },
+    {
+      id: 6,
+      title: "アルバイト",
+      info: "神戸国際コミュニティーセンター(KICC)で、ネパール語と日本語の翻訳/通訳の仕事をしております。",
+    },
+    {
+      id: 7,
+      title: "私の強み",
+      info: "私の強みは、常に新しいことを学びたいという姿勢です。学ぶことが好きで、最近の自己学習プロジェクトでは新しい技術や業界の最新情報をキャッチアップしました。新しいことに挑戦することが得意で、初めてのWebサイト作成のプロジェクトでも積極的に取り組みました。得た知識やスキルをチームとシェアすることを大切にして、成長できる環境を作りたいと思っています。新しい技術を学ぶプロセスには終わりがないと思って、今後も常に自分を向上させるために新しいことを学ぶ機会を求めていきます。今までの経験を生かして、貴社に貢献できると信じています。",
+    },
+    {
+      id: 8,
+      title: "得意な科目",
+      info: "私はウェブサイト作成の授業に特に注力しました。HTMLとCSSは、ウェブサイトの基本となる言語でした。HTMLとCSSを使って、お店や個人で使えるようなサイトを作りました。お店や個人で使えるようなサイトを作るためには授業中に学んだHTMLとCSSの知識を組み合わせて、さまざまな機能を実装しました。これ以外でも、パソコンとインターネットを利用する際の注意点も勉強してきました。授業中に学んだパソコンと情報モラルやセキュリティの知識を活用して仕事をしています。社会に出てからは、今まで学んだことを使って、会社を成長させるために頑張ります。",
+    },
+    {
+      id: 9,
+      title: "大学生活で力を注いだこと",
+      info: "大学生活で頑張ったのは、神戸市北区の多文化ファームプロジェクトでのボランティア活動です。欧米と東南アジアの農産物を9月に植えたり、草を取ったり、12月に収穫をしました。外国人と日本人がボランティア活動に参加されたので、通訳もしました。この経験を通して、多様な人々と交流し、コミュニケーションをとる大切さを学びました。また、チームで協力して仕事をすることの楽しさも知りました。社会に出たら、この経験を生かして、多様な人々とのつながりで仕事をしたいと思っています。",
+    },
+    {
+      id: 10,
+      title: "感謝の言葉",
+      info: "最後に、私の自己紹介を読んでいただき、誠にありがとうございます。私は、貴社で働くことを楽しみにしております。貴社での新しい挑戦を通じて、自分を成長させることができると信じています。有り難うございました。🙇🏻",
+    },
+  ];
+
+  return (
+    <div className="gradient-page bg-white pl-2 md:pl-16 py-8 md:mr-16">
+      <h1 className="text-transparent gradient-head text-4xl font-bold text-center p-4">
+        自己紹介
+      </h1>
+      <div className="flex flex-col m-0">
+        {/* Using Accordion to display the information from daisyui.com*/}
+        {qns.map((item, index) => (
+          <div
+            key={item.id}
+            className="z-[0] collapse collapse-plus bg-base-200 text-center text-2xl my-2"
+          >
+            <input
+              type="radio"
+              name="my-accordion-3"
+              defaultChecked={index === 0}
+            />
+            <div className="collapse-title text-xl font-medium">
+              {item.title}
+            </div>
+            <div className="collapse-content">
+              <p>{item.info}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default About;
