@@ -60,7 +60,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <button
-          className="bg-[#001b5e] text-gray-100 mt-4 w-full p-4"
+          className="bg-indigo-400  text-gray-100 mt-4 w-full p-4"
           type="submit"
         >
           送信
