@@ -3,7 +3,7 @@ import projectItem from "../utils/assets/projectItem.jpg"
 
 const Portfolio=()=>{
     return (
-      <div className="gradient-page bg-white p-1 md:pl-16  md:mr-16 md:pl-24">
+      <div className="gradient-page bg-white p-1 md:mr-16 md:pl-24">
         <h1 className="text-transparent gradient-head text-4xl font-bold text-center p-1">
           プロジェクト
         </h1>
