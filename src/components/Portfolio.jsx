@@ -1,6 +1,7 @@
 import ProjectItem from './ProjectItem';
 import projectItem from "../utils/assets/projectItem.jpg"
 
+
 const Portfolio=()=>{
     return (
       <div className="gradient-page bg-white p-1 md:mr-16 md:pl-24">
